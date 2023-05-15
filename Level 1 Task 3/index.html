@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURE</title>
+    <link rel="shortcut icon" href="./t1.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="index.js"></script>
+ </head>
+ <body>
+   <div class="title">
+   <h2>TEMPERATURE CONVERTER </h2>
+ </div>
+ <div class="card">
+   <div class="container">
+      <div class="cbox">
+         <div class="cons">
+             <p>Enter values here: </p>
+         </div>
+         <div class="cons1">
+         <select  id="tinput-type" onscroll="t()" onclick="t()">
+             <option value="kel">Kelvin</option>
+             <option value="cel">Celsius</option>
+             <option value="far">Fahrenheit</option>
+         </select>
+         <span class="arrow">&#8651;</span>
+         <select  id="tresult-type" onscroll="t()" onclick="t()">
+           <option value="cel">Celsius</option>
+           <option value="kel">Kelvin</option>
+           <option value="far">Fahrenheit</option>
+ 
+         </select>
+         </div>
+
+         <div class="cons2">
+         <input type="text" placeholder="0.000000" id="tinput" oninput="t()" onclick="t()">
+         <span>&#8596</span>
+         <input type="text" placeholder="0.000000" id="tresult" oninput="t()" onclick="t()">
+         </div>
+     </div>
+   </div>
+ </div>
+ </html>
